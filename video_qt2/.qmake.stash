@@ -1,0 +1,6 @@
+QMAKE_DEFAULT_INCDIRS = \
+    /usr/include \
+    /usr/local/include
+QMAKE_DEFAULT_LIBDIRS = \
+    /lib \
+    /usr/lib

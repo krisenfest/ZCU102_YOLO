@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="xilinx.gnu.arm.a53.linux.toolchain.860855238">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.arm.a53.linux.toolchain.860855238" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.xilinx.sdk.managedbuilder.XELF.arm.a53.linux" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="xilinx.gnu.arm.a53.linux.toolchain.860855238" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="xilinx.gnu.arm.a53.linux.toolchain.860855238.596344237" name="/" resourcePath="">
+						<toolChain id="xilinx.gnu.arm.a53.linux.toolchain.461140125" name="Xilinx ARM A53 GNU/Linux Toolchain" superClass="xilinx.gnu.arm.a53.linux.toolchain">
+							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.linux" id="xilinx.arm.a53.linux.target.gnu.base.1289497127" isAbstract="false" name="Debug Platform" superClass="xilinx.arm.a53.linux.target.gnu.base"/>
+							<builder id="xilinx.gnu.arm.a53.linux.toolchain.builder.1007608887" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="GNU make" superClass="xilinx.gnu.arm.a53.linux.toolchain.builder"/>
+							<tool id="xilinx.gnu.arm.a53.linux.c.toolchain.assembler.1560448401" name="ARM A53 Linux gcc assembler" superClass="xilinx.gnu.arm.a53.linux.c.toolchain.assembler">
+								<inputType id="xilinx.gnu.assembler.input.1589185999" superClass="xilinx.gnu.assembler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.arm.a53.linux.c.toolchain.compiler.985402297" name="ARM A53 Linux gcc compiler" superClass="xilinx.gnu.arm.a53.linux.c.toolchain.compiler"/>
+							<tool id="xilinx.gnu.arm.a53.linux.cxx.toolchain.compiler.369677620" name="ARM A53 Linux g++ compiler" superClass="xilinx.gnu.arm.a53.linux.cxx.toolchain.compiler">
+								<inputType id="xilinx.gnu.arm.a53.linux.cxx.compiler.input.1842362610" name="C++ source files" superClass="xilinx.gnu.arm.a53.linux.cxx.compiler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.arm.a53.linux.toolchain.archiver.809170786" name="ARM A53 Linux archiver" superClass="xilinx.gnu.arm.a53.linux.toolchain.archiver"/>
+							<tool id="xilinx.gnu.arm.a53.linux.c.toolchain.linker.1117676720" name="ARM A53 Linux gcc linker" superClass="xilinx.gnu.arm.a53.linux.c.toolchain.linker"/>
+							<tool id="xilinx.gnu.arm.a53.linux.cxx.toolchain.linker.1760653010" name="ARM A53 Linux g++ linker" superClass="xilinx.gnu.arm.a53.linux.cxx.toolchain.linker">
+								<inputType id="xilinx.gnu.linker.input.2015340491" superClass="xilinx.gnu.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+								<inputType id="xilinx.gnu.linker.input.lscript.2020269133" name="Linker Script" superClass="xilinx.gnu.linker.input.lscript"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="video_qt2.null.326194944" name="video_qt2"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/video_qt2"/>
+		</configuration>
+	</storageModule>
+</cproject>
