@@ -11,17 +11,11 @@
 #include <opencv2/imgproc.hpp>
 #endif
 
-#include <list>
 #include "object_dector.hpp"
+#include "object_int.h"
 using namespace cv;
 using namespace std;
 
-typedef struct infer_controller
-{
-	IMAGE_DATA *input;
-	std::list<THE_WEIGHT> *weight_list;
-	unsigned int cnt_weight;
-}INFER_CONTROLLER;
 
 
 INFER_CONTROLLER *alloc_infer_controller(IMAGE_DATA *input, list<THE_WEIGHT> &list)
@@ -137,7 +131,7 @@ int object_detection(unsigned short *frm_data_in, unsigned short *frm_data_out,
 }
 
 
-void draw_the_box(unsigned short *frm_data_in, unsigned short *frm_data_out,
+static void draw_the_box(unsigned short *frm_data_in, unsigned short *frm_data_out,
 		 int height, int width, int stride)
 {
 	Mat src(height, width, CV_8UC2, frm_data_in, stride);

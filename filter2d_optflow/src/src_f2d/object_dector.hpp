@@ -1,6 +1,7 @@
 #ifndef SRC_SRC_F2D_OBJECT_DECTOR_HPP_
 #define SRC_SRC_F2D_OBJECT_DECTOR_HPP_
 
+#include <list>
 #define RAW_IMAGE_CHANNEL	-1
 #define RAW_IMAGE_SIZE		0
 #define WEIGHT_CNT 			-1
@@ -23,10 +24,12 @@ typedef struct image_data
 	unsigned int channel;
 }IMAGE_DATA;
 
-int object_detection(unsigned short *frm_data_in, unsigned short *frm_data_out,
-		 int height, int width, int stride);
+typedef struct infer_controller
+{
+	IMAGE_DATA *input;
+	std::list<THE_WEIGHT> *weight_list;
+	unsigned int cnt_weight;
+}INFER_CONTROLLER;
 
-void draw_the_box(unsigned short *frm_data_in, unsigned short *frm_data_out,
-		 int height, int width, int stride);
 
 #endif /* SRC_SRC_F2D_OBJECT_DECTOR_HPP_ */
