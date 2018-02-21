@@ -51,15 +51,14 @@ extern "C" {
 #include "filter2d.h"
 #include "helper.h"
 
+
 void filter2d_cv(unsigned short *frm_data_in, unsigned short *frm_data_out,
 		 int height, int width, int stride, coeff_t coeff);
 void filter2d_sds(unsigned short *frm_data_in, unsigned short *frm_data_out,
 		  int height, int width, int stride, coeff_t coeff);
-void draw_the_box(unsigned short *frm_data_in, unsigned short *frm_data_out,
-		 int height, int width, int stride);
-
 #ifdef __cplusplus
 }
 #endif
+
 
 #endif

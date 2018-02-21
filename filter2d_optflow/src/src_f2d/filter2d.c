@@ -49,6 +49,8 @@
 #include "filter2d_int.h"
 #include "platform.h"
 
+#include "object_dector.hpp"
+
 const coeff_t coeff_blur = {
 	{ 1, 1, 1},
 	{ 1,-7, 1},
@@ -245,6 +247,7 @@ static void filter2d_func(struct filter_s *fs,
 	default:
 	//	filter2d_cv(frm_data_in, frm_data_out, height_in, width_in,
 	//		    pix_stride_in, coeff_cur);
+		//object_detection(frm_data_in, frm_data_out, height_in, width_in, pix_stride_in);
 		draw_the_box(frm_data_in, frm_data_out, height_in, width_in, pix_stride_in);
 		break;
 	}
