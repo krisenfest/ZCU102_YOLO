@@ -15,8 +15,6 @@ extern "C" {
 int object_detection(unsigned short *frm_data_in, unsigned short *frm_data_out,
 		 int height, int width, int stride);
 
-//void draw_the_box(unsigned short *frm_data_in, unsigned short *frm_data_out,
-//		 int height, int width, int stride);
 #ifdef __cplusplus
 }
 #endif
