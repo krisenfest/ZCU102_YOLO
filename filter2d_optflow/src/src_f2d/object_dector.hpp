@@ -6,7 +6,8 @@
 #define RAW_IMAGE_SIZE		0
 #define WEIGHT_CNT 			-1
 #define CLASS_CNT			20
-#define BOX_DRAWING_MODE	1
+#define PURE_POST_PROCESSING 1
+#define DEMO_MODE	0
 
 typedef struct the_weight
 {
