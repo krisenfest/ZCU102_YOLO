@@ -15,6 +15,11 @@ extern "C" {
 int object_detection(unsigned short *frm_data_in, unsigned short *frm_data_out,
 		 int height, int width, int stride);
 
+#define INPUT_RAW_PIXEL	(768)
+#define INPUT_COL_PIXEL	(576)
+//#define INPUT_RAW_PIXEL	(416)
+//#define INPUT_COL_PIXEL	(416)
+
 #ifdef __cplusplus
 }
 #endif

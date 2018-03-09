@@ -249,6 +249,7 @@ static void filter2d_func(struct filter_s *fs,
 	//		    pix_stride_in, coeff_cur);
 		object_detection(frm_data_in, frm_data_out, height_in, width_in, pix_stride_in);
 		//draw_the_box(frm_data_in, frm_data_out, height_in, width_in, pix_stride_in);
+		//object_detection(NULL,frm_data_out,INPUT_COL_PIXEL,INPUT_RAW_PIXEL, pix_stride_in);
 		break;
 	}
 }
