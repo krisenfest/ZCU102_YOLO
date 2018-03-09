@@ -35,7 +35,7 @@
 
 #if (DEBUG_PRINT)
 #define dector_printf(X...) printf(HEADER X)
-#elif
+#else
 #define dector_printf(X...)
 #endif
 

@@ -101,6 +101,7 @@ static THE_PREDICTED_DATA *hw_cnn_network(INFER_CONTROLLER *infer)
 		dector_printf("predict_cube read error: %s\n", strerror(errno));
 #endif
 
+	close(fd);
 	return predict_data;
 }
 
@@ -213,6 +214,10 @@ static int video_mode_processing(unsigned short *frm_data_in, unsigned short *fr
 	Mat dst(height, width, CV_8UC2, frm_data_out, stride);
 	rgb2yuv422(&rgb_image, &dst);
 #endif
+
+	image.release();
+	rgb_image.release();
+
 	return 0;
 }
 
